@@ -1,40 +1,22 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const landingDiv = styled.div`
-    
-`
-
-const landingTitle = styled.div`
-    color: red;
-`
-
-const landingText = styled.div`
-
-`
-
-const landingButtons = styled.div`
-
-`
-
-
+import { NavLink } from 'react-router-dom';
 
 const landing = () => {
 
     return (
-        <landingDiv>
-            <landingTitle>
+            <div className='landingDiv'>
+                <div className="landingTitle">
                 <h1>Streemly</h1>
-            </landingTitle>
-            <landingText>
-                <p><span>Streemly</span> is the best way to manage hr requests and eliminate organizational lantency</p>
-            </landingText>
-            <landingButtons>
-                <button className="aBtn">Signup</button>
-                <button className="aBtn">Login</button>
-            </landingButtons>
-        </landingDiv>
-    )
+                </div>
+                <div className='landingText'>
+                    <p><span>Streemly</span> is the best way to manage HR requests and eliminate organization latency.</p>
+                </div>
+                <div className='landingButtons'>
+                    <button className="aBtn"><NavLink to='login'>Signup</NavLink></button>
+                    <button className="aBtn">Login</button>
+                </div>
+            </div>
+    )       
 }
 
 export default landing;

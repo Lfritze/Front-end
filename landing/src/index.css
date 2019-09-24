@@ -11,3 +11,53 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* varibles */
+
+/* landing page css */
+body{
+  background: #545e75;
+  
+}
+.landingDiv{
+  margin: 15% auto;
+  width: 70vw;
+  height: 25vh;
+  padding: 30px 45px;
+  border: #D3DDEA 1px solid;
+  border-radius: 15px;
+}
+
+.landingTitle{
+  color: #D3DDEA;
+}
+
+.landingText{
+  color: #D3DDEA;
+  font-size: 1.2rem;
+}
+.landingText span{
+  color: #FF990A;
+}
+.landingButtons{
+  margin: 35px auto; 
+}
+.aBtn:hover {
+  color: #7795f8;
+  transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.aBtn{
+  padding: 12px 33px;
+  background: #FF990A;
+  color: #D3DDEA;
+  border: #FF990A;  
+  border-radius: 15px;
+  font-size: 1.2rem; 
+  margin: 5px 30px; 
+}
+
+/*  Request Form */
+
+/* login form */
