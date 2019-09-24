@@ -12,10 +12,14 @@ const landing = () => {
                     <p><span>Streemly</span> is the best way to manage HR requests and eliminate organization latency.</p>
                 </div>
                 <div className='landingButtons'>
-                    <button className="aBtn"><NavLink to='login'>Signup</NavLink></button>
-                    <button className="aBtn">Login</button>
+                <NavLink to='signup'><button className="aBtn">Signup</button></NavLink>
+                <NavLink to='login'><button className="aBtn">Login</button></NavLink>
                 </div>
+                <small>Copyright (c) 2019 Build-Week-Org-Chart</small>
             </div>
+
+              
+                
     )       
 }
 

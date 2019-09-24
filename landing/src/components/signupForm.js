@@ -5,42 +5,42 @@ import * as Yup from 'yup';
 import { NavLink } from 'react-router-dom';
 import { BrowserRouter as Router } from 'react-router-dom'; 
 
-const LoginForm = ({
+const SignupForm = ({
     errors,
     touched,
     handleSubmit,
 }) => (
     <div className="formPage">
         <div className="formDiv">
-            <h2 className="landingTitle">Login to Streemly</h2>
-            <small> Login to unlock the greatest HR tool man has ever made!</small>
+            <h2 className="landingTitle">Sign up for Streemly</h2>
+            <small>Enter your deisred email and password to unlock the greatest HR tool man has ever made!</small>
             <Form onSubmit={handleSubmit}> 
             <div>
             <label>
-                Enter your email.
+                Enter an email.
                 <Field type="email" name="email" placeholder="Email" />
                 { touched.email && errors.email && <small>{errors.email}</small> }
             </label>
             </div>
             <div>
             <label>
-                Enter your password.
+                Enter an password.
                 <Field type="password" name="password" placeholder="Password" />
                 { touched.password && errors.password && <small>{errors.password}</small>}
             </label>
             </div>
             <div>
-            <button class="aBtn">Login</button>
+            <button class="aBtn">Sign Up</button>
             </div>
             </Form>
 
-            <Router><NavLink to=''>Return to home.</NavLink></Router>
+            <Router><NavLink to='/'>Return to home.</NavLink></Router>
         </div>
         <small>Copyright (c) 2019 Build-Week-Org-Chart</small>
     </div>
 )
 
-const FormikLoginForm = withFormik({
+const FormikSignupForm = withFormik({
   mapPropsToValues({ email, password }) {
     return {
       email: email || "",
@@ -56,8 +56,8 @@ const FormikLoginForm = withFormik({
     
     
 //   }
-})(LoginForm);
+})(SignupForm);
 
-export default FormikLoginForm;
+export default FormikSignupForm;
 
-render(<FormikLoginForm />, document.getElementById('root') )
+render(<FormikSignupForm />, document.getElementById('root') )

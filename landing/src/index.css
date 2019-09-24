@@ -22,7 +22,6 @@ body{
 .landingDiv{
   margin: 15% auto;
   width: 70vw;
-  height: 25vh;
   padding: 30px 45px;
   border: #D3DDEA 1px solid;
   border-radius: 15px;
@@ -61,3 +60,44 @@ body{
 /*  Request Form */
 
 /* login form */
+
+.formPage{
+ width: 80%;
+ margin: 0 auto;
+}
+
+.formDiv{
+  margin: 15% auto;;
+  padding: 10% 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: #D3DDEA 1px solid;
+  border-radius: 15px;
+  width: 100%;
+}
+
+input{
+  display: inline-block;
+  padding: 10px 15px;
+  border: #D3DDEA 1px solid;
+  border-radius: 15px;
+  margin: 2% 5%;
+  max-width: 50%;
+}
+
+label{
+  display: inline-block;
+  color: #D3DDEA;
+  text-align: center;
+  margin: 1% 5%;
+}
+
+a{
+  text-decoration: none;
+  color: #D3DDEA;
+}
+
+small{
+  color: #D3DDEA;
+}
