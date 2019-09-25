@@ -9,6 +9,9 @@ import RequestForm from './components/requestForm'
 // miniforms
 import VacationForm from './components/miniForms/vacationForm'
 import BudgetForm from './components/miniForms/budgetForm'
+// Cards
+import CharacterList from './components/cardList/employeeList'
+
 
 function App() {
   return (
@@ -17,11 +20,13 @@ function App() {
         <Route exact path='/' component={landing}/>
         <Route path='/login' component={LoginForm} />
         <Route path='/signup' component={SignupForm} />
-        <Route path='/request' component={RequestForm}/>
+
+        <Route path="/card" component={CharacterList}/>
+        {/* <Route path='/request' component={RequestForm}/>
         
         <Route path='/vacation' component={VacationForm} />
         <Route path='/budget' component={BudgetForm} />
-        
+         */}
        </Router>
     </div>
   );

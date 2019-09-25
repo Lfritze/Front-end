@@ -30,7 +30,7 @@ const SignupForm = ({
             </label>
             </div>
             <div>
-            <button class="aBtn">Sign Up</button>
+            <button className="aBtn">Sign Up</button>
             </div>
             </Form>
 
