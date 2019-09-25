@@ -4,7 +4,7 @@ import landing from './components/landing';
 import './App.css';
 
 import LoginForm from './components/onboarding/loginForm';
-imp/ort SignupForm from './components/onboarding/signupForm'
+import SignupForm from './components/onboarding/signupForm'
 // import RequestForm from './components/dashboardForms/requestForm'
 // // miniforms
 // import VacationForm from './components/miniForms/vacationForm'
