@@ -1,5 +1,5 @@
 import React from 'react'
-import '../index.css';
+
 export default function CharacterCard(props) {
   // Pass props into state
   const { name, gender, type, origin, } = props.data

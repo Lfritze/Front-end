@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import landing from './components/landing';
 import './App.css';
 
-import LoginForm from './components/loginForm';
-import SignupForm from './components/signupForm'
-import RequestForm from './components/requestForm'
+import LoginForm from './components/onboarding/loginForm';
+import SignupForm from './components/onboarding/signupForm'
+import RequestForm from './components/dashboardForms/requestForm'
 // miniforms
 import VacationForm from './components/miniForms/vacationForm'
 import BudgetForm from './components/miniForms/budgetForm'
