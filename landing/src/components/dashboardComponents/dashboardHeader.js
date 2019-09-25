@@ -15,7 +15,7 @@ const DashboardHeader = () => {
                 <div>
                     {/* Add Employee Form */}
                     
-                    <NavLink to="/login"> <button className="headerButtons" >Add Employee</button></NavLink>
+                    <NavLink to="/addemployee"> <button className="headerButtons" >Add Employee</button></NavLink>
                 </div>
                 <div>
                     {/* Request Form */}

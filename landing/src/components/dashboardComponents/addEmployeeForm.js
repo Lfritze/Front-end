@@ -2,19 +2,23 @@ import React from "react";
 import { render } from 'react-dom';
 import { withFormik, Form, Field } from "formik";
 // import * as Yup from 'yup';
-// import { NavLink } from 'react-router-dom';
-// import { BrowserRouter as Router } from 'react-router-dom'; 
+import { NavLink } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom'; 
 
 const AddEmployeeForm = ({
     
 }) => (
-    <div>
+    <div className="formPage">
+    <div className="addEmployeeDiv">
         <h3>Add a new employee to your company</h3>
     <Form>
+        <div className="stack">
         <label>
-            Will this memeber have manager permissions?
-            <Field component="checkbox" name="managerPerm"/>
+           Give manager permissions?
+            <Field type="checkbox" name="managerPerm" />
         </label>
+        </div>
+        <div className="stack">
         <label>
              Select Department
             <Field component="select" name="addDepartment">
@@ -25,24 +29,38 @@ const AddEmployeeForm = ({
                 <option value="dprMa">Marketing</option>
             </Field> 
         </label>
+        </div>
+        <div className="stack">
         <label>
            Who is thier manager
             <Field type="text" name="managerWho" placeholder="Manager Name"/>
 
         </label>
+        </div>
+        <div className="stack">
         <label>
             Employee Name
             <Field type="text" name="name" placeholder="Juan Wick"/>
 
         </label>
+        </div>
+        <div className="stack">
         <label>
             Job Title
             <Field type="text" name="job" placeholder="Software Engineer"/>
 
         </label>
+        </div>
+        <div>
+            <button className="aBtn" type="submit">Add Employee</button>
+        </div>
+        <div>
+            <NavLink to='/dashboard'>Return To Dashboard</NavLink>
+        </div>
+        </Form>
+        </div>
         
-    </Form>
-    </div>
+    </div>  
 )
 const FormikEmployeeForm = withFormik({
     mapPropsToValues({ managerPerm, addDepartment, name, job }) {
@@ -57,5 +75,5 @@ const FormikEmployeeForm = withFormik({
 
 
 
-render(<FormikEmployeeForm />, document.getElementById('root') )
+render(<Router><FormikEmployeeForm /></Router>, document.getElementById('root') )
 export default FormikEmployeeForm;

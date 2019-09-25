@@ -57,7 +57,23 @@ body{
   margin: 5px 30px; 
 }
 
-/*  Request Form */
+/*  add employee Form */
+
+.addEmployeeDiv{
+  margin: 15% auto;;
+  padding: 10% 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: #D3DDEA 1px solid;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.stack{
+  width: 32%;
+  margin: 1% auto;
+}
 
 /* login form */
 
