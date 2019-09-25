@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import CharacterCard from './employeeCard';
-import { Route } from 'react-router-dom';
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
