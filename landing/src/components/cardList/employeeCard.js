@@ -6,7 +6,7 @@ export default function CharacterCard(props) {
 
   // JSX strucutre
   return (
-    <div className="cardChar">  
+    <div className="employeeCard">  
       <h3>{name}</h3>
       <h4>{gender}</h4>
       <h4>{type}</h4>

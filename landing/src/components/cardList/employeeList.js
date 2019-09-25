@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import CharacterCard from './employeeCard';
+import {render} from 'react-dom'
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
@@ -27,3 +28,5 @@ export default function CharacterList() {
     </>
   );
 }
+
+render(<CharacterList />, document.getElementById('root'))

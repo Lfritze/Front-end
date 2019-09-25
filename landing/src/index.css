@@ -102,4 +102,59 @@ small{
   color: #D3DDEA;
 }
 
-/* select form */
+/* dashboard header */
+
+.headerDiv{
+  width: 100%;
+  background: #D3DDEA;
+  padding: 10px 0;
+}
+
+.headerItems{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 3% auto;
+}
+
+.headerButtons{
+  padding: 15px;
+  border-radius: 15px; 
+  background: #545e75;
+  border: 1px solid #545e75;
+  color: aliceblue;
+  font-size: .8rem;
+}
+.headerButtons:hover {
+  color: #7795f8;
+  transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* cards and cardContainer */
+h2{
+  color: #545e75;
+}
+.employeeCard{
+  width: 30%;
+  border: #CFD4D5 1px solid;
+  margin-top: 4%;
+  background: #CFD4D5;
+  border-radius: 15px;
+}
+.employeeCard:hover {
+  color: #7795f8;
+  transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.cardContainer{
+  width: 80%;
+  margin: 8% auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+

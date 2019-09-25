@@ -5,12 +5,9 @@ import './App.css';
 
 import LoginForm from './components/onboarding/loginForm';
 import SignupForm from './components/onboarding/signupForm'
-// import RequestForm from './components/dashboardForms/requestForm'
-// // miniforms
-// import VacationForm from './components/miniForms/vacationForm'
-// import BudgetForm from './components/miniForms/budgetForm'
-// Cards
+
 import CharacterList from './components/cardList/employeeList'
+import Dashboard from './components/dashboard';
 
 
 function App() {
@@ -21,12 +18,7 @@ function App() {
         <Route path='/login' component={LoginForm} />
         <Route path='/signup' component={SignupForm} />
 
-        <Route path="/card" component={CharacterList}/>
-        {/* <Route path='/request' component={RequestForm}/>
-        
-        <Route path='/vacation' component={VacationForm} />
-        <Route path='/budget' component={BudgetForm} />
-         */}
+        <Route path='/dashboard' component={Dashboard}/>
        </Router>
     </div>
   );
