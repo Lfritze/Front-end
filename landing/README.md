@@ -1,68 +1,108 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+PRODUCT VISION
 
-## Available Scripts
+Clone this document and answer the prompts to the best of your team's ability
+Proposal
 
-In the project directory, you can run:
+What problem does your app solve?
+Streamlines the onboarding process and improves interdepartmental communication.
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Be as specific as possible; how does your app solve the problem?
+Streamlines the onboarding process by letting enterprises more efficiently manage business proposals and HR requests. THis streamlines the relations between managers and employees. 
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
-### `npm test`
+What is the mission statement?
+Eliminating organizational latency
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Features
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+What features are required for your minimum viable product?
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Onboarding process for a user.
+2. Ability to add new members of a company, who they report to, their department, and title.
+3. Ability to create relationships between people in the organization.
+4. Ability to search by specific user and return their manager and department head. Or search by department and return department head.
+5.  Ability to edit or delete a member of the company.
+6. Homepage to display the org chart visually.
+What features may you wish to put in a future release?
+Ability to upload a csv file to autopopulate an org chart or other file types.
+Ability to schedule meetings 
+Add a calendar
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+What do the top 3 similar apps do for their users?
+https://www.orgchartpro.com - Organization charting solutions for any business, any market, any size.
+https://www.bamboohr.com - Employee Self-Onboarding, HR Reporting, TimeTracking, offers small and growing companies a human resource information system 
+https://www.organimi.com - create organizational charts for companies
+Design - Planning
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Optional but highly recommended Please refer to this document:
+Build Weeks: Planning & Design Worksheet (How to build a beautiful application)
+What design system will you use?
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+What will your user flow be?
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+What is the URL to your wireframes?
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+Frameworks - Libraries
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+What 3rd party frameworks/libraries are you considering using?
+Semanitc UI
+Bootstrap
+Material UI
+Styled Components
+JWT
+Express
 
-### Analyzing the Bundle Size
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Do APIs require you to contact its maintainer to gain access?
+No
 
-### Making a Progressive Web App
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Are you required to pay to use the API?
+No
 
-### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Have you considered using Apple Frameworks? (MapKit, Healthkit, ARKit?)
+No
 
-### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+For Data Scientists
 
-### `npm run build` fails to minify
+Describe the Established data source with at least rough data able to be provided on day 1.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+You can gather information about the data set you’ll be working with from the project description. Be sure to collaborate with your PM, and your Backend Architect to chat about the resources you have.
+
+
+Write a description for what the DS problem is (what uncertainty/prediction are we trying to do here? Sentiment analysis? Why is this a useful solution to a problem?)
+
+
+A target (e.g. JSON format or such) for output that DS students can deliver to web/other students for them to ingest and use in the app
+
+
+Target Audience
+
+Who is your target audience? Be specific.
+Any business or enterprise looking to improve internal communications.
+
+
+What feedback have you gotten from potential users?
+NA
+
+
+Have you validated the problem and your solution with your target audience? How?
+No
+
+
+Research
+
+Research thoroughly before writing a single line of code. Solidify the features of your app conceptually before implementation. Spend the weekend researching so you can hit the ground running on Monday.
+Prototype Key Feature(s)
+
+This is the “bread and butter” of the app, this is what makes your app yours. Calculate how long it takes to implement these features and triple the time estimated. That way you’ll have plenty of time to finish. It is preferred to drop features and spend more time working on your MVP features if needed.
