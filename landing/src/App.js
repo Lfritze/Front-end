@@ -8,7 +8,7 @@ import SignupForm from './components/signupForm'
 import RequestForm from './components/requestForm'
 // miniforms
 import VacationForm from './components/miniForms/vacationForm'
-
+import BudgetForm from './components/miniForms/budgetForm'
 
 function App() {
   return (
@@ -18,8 +18,11 @@ function App() {
         <Route path='/login' component={LoginForm} />
         <Route path='/signup' component={SignupForm} />
         <Route path='/request' component={RequestForm}/>
+        
         <Route path='/vacation' component={VacationForm} />
-      </Router>
+        <Route path='/budget' component={BudgetForm} />
+        
+       </Router>
     </div>
   );
 }

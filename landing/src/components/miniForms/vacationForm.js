@@ -6,6 +6,7 @@ const VactionForm = ({
 
 }) => (
     <div>
+        <h3>Vacation Form</h3>
         <Form>
             <label>
                 What dates do you need to take off?
