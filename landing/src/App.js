@@ -6,9 +6,8 @@ import './App.css';
 import LoginForm from './components/onboarding/loginForm';
 import SignupForm from './components/onboarding/signupForm'
 
-import CharacterList from './components/cardList/employeeList'
 import Dashboard from './components/dashboard';
-
+import addEmployeeForm from './components/dashboardComponents/addEmployeeForm'
 
 function App() {
   return (
@@ -19,6 +18,7 @@ function App() {
         <Route path='/signup' component={SignupForm} />
 
         <Route path='/dashboard' component={Dashboard}/>
+        <Route path='/addemployee' component={addEmployeeForm}/>
        </Router>
     </div>
   );

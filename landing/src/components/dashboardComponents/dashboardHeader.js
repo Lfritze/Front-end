@@ -1,6 +1,7 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import { render } from 'react-dom'
+import { NavLink } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom'; 
 
 const DashboardHeader = () => {
 
@@ -13,7 +14,8 @@ const DashboardHeader = () => {
                 </div>
                 <div>
                     {/* Add Employee Form */}
-                    <button className="headerButtons">Add Employee</button>
+                    
+                    <NavLink to="/login"> <button className="headerButtons" >Add Employee</button></NavLink>
                 </div>
                 <div>
                     {/* Request Form */}
@@ -23,11 +25,14 @@ const DashboardHeader = () => {
                     {/* Search Form (inactive */}
                     <h3>Search Bar Here</h3>
                 </div>
+                <div>
+                    <a href="/"><button className="headerButtons">Logout</button></a>
+                </div>
             </div>
         </div>
     )
 }
 
-render(<DashboardHeader />, document.getElementById('root'))
+render(<Router><DashboardHeader /></Router>, document.getElementById('root'))
 
 export default DashboardHeader

@@ -27,7 +27,7 @@ const AddEmployeeForm = ({
         </label>
         <label>
            Who is thier manager
-            <Field type="text" name="name" placeholder="Manager Name"/>
+            <Field type="text" name="managerWho" placeholder="Manager Name"/>
 
         </label>
         <label>

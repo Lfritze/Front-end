@@ -120,7 +120,7 @@ small{
 }
 
 .headerButtons{
-  padding: 15px;
+  padding: 10px 15px;
   border-radius: 15px; 
   background: #545e75;
   border: 1px solid #545e75;
@@ -133,7 +133,25 @@ small{
   box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 }
 
+.logoutBtn{
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  background: #545e75;
+  border: 1px solid #545e75;
+  color: aliceblue;
+}
+
 /* cards and cardContainer */
+
+/* h4 */
+.employeeTitle{
+  font-size: 1.4rem;
+  border-bottom: 1px solid #CFD4D5;
+  margin: 2% auto;
+  width: 20%;
+  color: #CFD4D5;
+}
 h2{
   color: #545e75;
 }
@@ -145,14 +163,15 @@ h2{
   border-radius: 15px;
 }
 .employeeCard:hover {
-  color: #7795f8;
+  color: #545e75;
+  background: #D3DDEA;
   transform: translateY(-1px);
   box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 }
 
 .cardContainer{
   width: 80%;
-  margin: 8% auto;
+  margin: 2% auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

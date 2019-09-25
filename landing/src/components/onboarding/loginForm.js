@@ -34,7 +34,7 @@ const LoginForm = ({
             </div>
             </Form>
 
-            <Router><NavLink to=''>Return to home.</NavLink></Router>
+            <NavLink to='/'>Return to home.</NavLink>
         </div>
         <small>Copyright (c) 2019 Build-Week-Org-Chart</small>
     </div>
@@ -60,4 +60,4 @@ const FormikLoginForm = withFormik({
 
 export default FormikLoginForm;
 
-render(<FormikLoginForm />, document.getElementById('root') )
+render(<Router><FormikLoginForm /></Router>, document.getElementById('root') )
