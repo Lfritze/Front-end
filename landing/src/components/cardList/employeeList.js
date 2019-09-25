@@ -1,12 +1,12 @@
   
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
-import CharacterCard from './employeeCard';
+import EmployeeCard from './employeeCard';
 import {render} from 'react-dom'
 
-export default function CharacterList() {
+export default function EmployeeList() {
   // TODO: Add useState to track data from useEffect
-  const [ chara, setChara ] = useState([])
+  const [ emp, setEmp ] = useState([])
 
   // Useeffect / axios
   useEffect(() => {
@@ -14,7 +14,7 @@ export default function CharacterList() {
    axios
     .get('https://rickandmortyapi.com/api/character/')
     .then(e =>{
-      setChara(e.data.results)
+      setEmp(e.data.results)
     })
     }
     Hook()
@@ -22,11 +22,11 @@ export default function CharacterList() {
 
   return (
     <>
-      {chara.map(data => 
-      <CharacterCard  key={data.name} data={data} />
+      {emp.map(data => 
+      <EmployeeCard  key={data.name} data={data} />
       )}
     </>
   );
 }
 
-render(<CharacterList />, document.getElementById('root'))
+render(<EmployeeList />, document.getElementById('root'))
