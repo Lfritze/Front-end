@@ -74,6 +74,12 @@ body{
   width: 32%;
   margin: 1% auto;
 }
+select{
+  display: inline-block;
+  padding: 8px;
+  border: #D3DDEA 1px solid;
+  border-radius: 15px;
+}
 
 /* login form */
 
