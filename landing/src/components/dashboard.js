@@ -12,9 +12,9 @@ const Dashboard = () => {
         <DashboardHeader />
 
             <h4 className="employeeTitle">Employee List</h4>
-            <div className="cardContainer">
+            {/* <div className="cardContainer"> */}
             <CharaterList />
-            </ div>
+            {/* </ div> */}
         </div>
     )
 };

@@ -1,17 +1,13 @@
-import React from "react";
+// import React from 'react';
 
-export default function SearchForm({ onSearch }) {
-  return (
-    <section className="search-form">
-      <form onSubmit={() => onSearch(name)}>
-        <input
-          // onChange={handleInputChange}
-          placeholder="name"
-          value={name}
-          name="name"
-        />
-        <button type="submit">Search</button>
-      </form>
-    </section>
-  );
-  }
+// const SearchForm = ({ handleSubmit }) => (
+//   <form onSubmit={handleSubmit}>
+//     <p>Search for Employees:</p>
+//     <input type="text" name="searchTerm" />
+//     <button type="submit">Submit</button>
+//   </form>
+// );
+
+// export default SearchForm;
+
+

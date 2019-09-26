@@ -190,12 +190,18 @@ h2{
   transform: translateY(-1px);
   box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 }
-
+img{
+  padding-top: 8px;
+  border-radius: 50%;
+  width: 92%;
+}
 .cardContainer{
-  width: 80%;
+  width: 60%;
   margin: 2% auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
+.searchLabel{
+  width: 80%;
+}

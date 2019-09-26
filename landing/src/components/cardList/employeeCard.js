@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function CharacterCard(props) {
+export default function EmployeeCard(props) {
   // Pass props into state
   const { name, gender, type, origin, } = props.data
 

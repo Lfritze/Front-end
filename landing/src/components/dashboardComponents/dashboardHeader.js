@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom'
 import { NavLink } from 'react-router-dom';
 import { BrowserRouter as Router } from 'react-router-dom'; 
-import SearchForm from './searchForm';
+import SearchForm from '../cardList/employeeList';
 const DashboardHeader = () => {
 
     return (
@@ -23,7 +23,7 @@ const DashboardHeader = () => {
                 </div>
                 <div>
                     {/* Search Form (inactive */}
-                    <SearchForm />
+
                 </div>
                 <div>
                     <a href="/"><button className="headerButtons">Logout</button></a>
