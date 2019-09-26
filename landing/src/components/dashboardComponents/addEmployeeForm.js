@@ -1,17 +1,19 @@
 import React from "react";
 import { render } from 'react-dom';
 import { withFormik, Form, Field } from "formik";
-// import * as Yup from 'yup';
+import * as Yup from 'yup';
 import { NavLink } from 'react-router-dom';
 import { BrowserRouter as Router } from 'react-router-dom'; 
 
 const AddEmployeeForm = ({
-    
+    errors,
+    touched,
+    handleSubmit,  
 }) => (
     <div className="formPage">
     <div className="addEmployeeDiv">
         <h3>Add a new employee to your company</h3>
-    <Form>
+    <Form onSubmit={handleSubmit}>
         <div className="stack">
         <label>
            Give manager permissions?
@@ -70,7 +72,14 @@ const FormikEmployeeForm = withFormik({
             name: name || '',
             job: job || '',
           }
-    }
+    },
+        validationSchema: Yup.object().shape({
+            // managerPerm: Yup.required(),
+            // addDepartment: Yup.required(),
+            // managerWho: Yup.required().string(),
+            // name: Yup.required().string(),
+            // job: Yup.required().string(),
+    }),
 })(AddEmployeeForm)
 
 

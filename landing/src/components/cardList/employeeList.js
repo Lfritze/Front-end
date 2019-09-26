@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import EmployeeCard from './employeeCard';
-import {render} from 'react-dom'
+import { render } from 'react-dom'
 
 export default function EmployeeList() {
   // TODO: Add useState to track data from useEffect
