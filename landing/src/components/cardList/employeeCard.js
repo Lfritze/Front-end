@@ -11,6 +11,7 @@ export default function CharacterCard(props) {
       <h4>{gender}</h4>
       <h4>{type}</h4>
       <h4>{origin.name}</h4>
+      <button onClick={console.log("edit initiated")}>Edit</button>
     </div>
   )
 }

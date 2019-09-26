@@ -16,10 +16,15 @@ export default function EmployeeList() {
     .then(e =>{
       setEmp(e.data.results)
     })
-    }
+    
+    .catch(err => console.log('Error: ', err));
     Hook()
+    }
   }, []);
 
+if (!emp) {
+  return <p>Loading data...</p>
+}
   return (
     <>
       {emp.map(data => 
