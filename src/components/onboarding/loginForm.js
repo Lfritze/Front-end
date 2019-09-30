@@ -30,7 +30,7 @@ const LoginForm = ({
             </label>
             </div>
             <div>
-            <button className="aBtn">Login</button>
+            <NavLink to='dashboard'><button className="aBtn">Login</button></NavLink>
             </div>
             </Form>
 
